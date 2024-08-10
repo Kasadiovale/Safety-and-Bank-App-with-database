@@ -15,7 +15,7 @@ from config import *
 import pygame
 import threading
 
-url = "mongodb+srv://ozberk:0808er11@cluster0.hwi4pdb.mongodb.net/?retryWrites=true&w=majority"  # MongoDB url
+url = ""  # MongoDB url buraya yapıştırın
 client = pymongo.MongoClient(url)
 
 db = client['güvenlik']  # Veritabanı adını belirtin
@@ -29,7 +29,7 @@ def play_background_music():
     pygame.init()
 
     # Müzik dosyasının yolu
-    muzik_dosyasi = "C:\\Users\\erkoz\\Downloads\\jazz.mp3"  
+    muzik_dosyasi = "C:\\Users\\erkoz\\Downloads\\jazz.mp3"   # kendi dosyanızı seçin indirin
 
     # Müzik dosyasının yüklenmesi ve çalınması
     pygame.mixer.music.load(muzik_dosyasi)
